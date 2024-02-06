@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "modproject",
+  "version": "${version}",
+  "name": "ModProject",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/Parth/ModProject"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/modproject/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "mod.modproject.client.ModProjectClient"
+    ],
+    "main": [
+      "mod.modproject.ModProject"
+    ]
+  },
+  "mixins": [
+    "modproject.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
