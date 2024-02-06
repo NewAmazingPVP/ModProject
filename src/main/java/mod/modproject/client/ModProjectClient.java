@@ -1,5 +1,6 @@
 package mod.modproject.client;
 
+import mod.modproject.client.items.CustomItem;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
@@ -16,6 +17,4 @@ public class ModProjectClient implements ClientModInitializer {
         Registry.register(Registries.ITEM, new Identifier("tutorial", "custom_item"), CUSTOM_ITEM);
         Registry.register(Registries.ITEM, new Identifier("gem", "gem_t1"), GEM);
     }
-
-
 }
