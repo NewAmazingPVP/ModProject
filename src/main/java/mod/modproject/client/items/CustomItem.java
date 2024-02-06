@@ -1,5 +1,6 @@
 package mod.modproject.client.items;
 
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -20,6 +21,7 @@ public class CustomItem extends Item {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand) {
         playerEntity.playSound(SoundEvents.BLOCK_WOOL_BREAK, 1.0F, 1.0F);
         playerEntity.sendMessage(Text.of("test"),true);
+        MinecraftClient.getInstance().player.sendMessage(Text.of("Hi there"));
         return TypedActionResult.success(playerEntity.getStackInHand(hand));
     }
 }
