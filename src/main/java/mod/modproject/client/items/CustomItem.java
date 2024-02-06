@@ -1,4 +1,4 @@
-package mod.modproject.client;
+package mod.modproject.client.items;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
