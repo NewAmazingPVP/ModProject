@@ -27,7 +27,11 @@ dependencies {
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-    modImplementation 'software.bernie.geckolib:geckolib-fabric-1.20.4:4.4.2'
+    modImplementation 'software.bernie.geckolib:geckolib-fabric-1.20.2:4.3.1'
+    //If you don't want to include the library in your jar, remove the include word
+    //You can find the latest version in [](https://maven.kosmx.dev/dev/kosmx/player-anim/player-animation-lib-fabric/)
+    include modImplementation("dev.kosmx.player-anim:player-animation-lib-fabric:1.0.2-rc1+1.20")
+    include modRuntimeOnly("io.github.kosmx.bendy-lib:bendy-lib-fabric:4.1.0")
 }
 
 processResources {
